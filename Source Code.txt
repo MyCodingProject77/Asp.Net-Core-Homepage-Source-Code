@@ -1,0 +1,136 @@
+
+
+      Home Index.cshtml
+
+      @{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewData["Title"]</title>
+<style>
+    body{
+        background-color: lightpink;
+    }
+</style>
+</head>
+<body>
+
+    <div class="myDiv">
+        <h2>Welcome to Cafe Express Restaurant</h2>
+        <h3>Dear Customer, Please Order Now. Before ordering, please see all the popular food below</h3>
+    </div>
+
+    <div class="card">
+        <img src="/images/burger.jpg" alt="Jane">
+        <div class="container">
+            <h2>Burger</h2>
+            <a asp-controller="Orders" asp-action="Create">
+                <input type="button" class="btn btn-primary" value="Order Now" />
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/images/chicken.jpg" alt="Jane">
+        <div class="container">
+            <h2>Chicken</h2>
+            <a asp-controller="Orders" asp-action="Create">
+                <input type="button" class="btn btn-primary" value="Order Now" />
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/images/pizza.jpg" alt="Jane">
+        <div class="container">
+            <h2>Pizza</h2>
+            <a asp-controller="Orders" asp-action="Create">
+                <input type="button" class="btn btn-primary" value="Order Now" />
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/images/cake.jpg" alt="Jane">
+        <div class="container">
+            <h2>Cake</h2>
+            <a asp-controller="Orders" asp-action="Create">
+                <input type="button" class="btn btn-primary" value="Order Now" />
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/images/coca.jpg" alt="Jane">
+        <div class="container">
+            <h2>Coca Cola</h2>
+            <a asp-controller="Orders" asp-action="Create">
+                <input type="button" class="btn btn-primary" value="Order Now" />
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/images/pizza.jpg" alt="Jane">
+        <div class="container">
+            <h2>Pizza</h2>
+            <a asp-controller="Orders" asp-action="Create">
+                <input type="button" class="btn btn-primary" value="Order Now" />
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+   site.css
+
+
+   .myDiv{
+    border: 5px outset red;
+    background-color: lightblue;
+    text-align: center;
+    height: 250px;
+    width: 100%;
+}
+
+img{
+    width: 200px;
+    height: 120px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.card{
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-top: 30px;
+}
+
+.container{
+    padding: 2px 16px;
+}
+
+h2{
+    color: red;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+    background-color: #808080;
+
+}
+ 
